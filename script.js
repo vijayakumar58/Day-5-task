@@ -24,4 +24,13 @@ return title.replace(title[0],title[0].toUpperCase());
     }
     console.log(str());
 
-    
+  //c.Sum of all numbers in an array
+  
+  let arr1=[11,12,13,14,15,16,17,18,19,20]
+  var res=function(){
+      let sum=0
+      for(var i=0;i<arr1.length;i++){
+            sum = sum + arr1[i];
+      }
+      return sum ;
+  }
