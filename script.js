@@ -15,8 +15,13 @@ console.log(num(arr));
 
 //b.Convert all the strings to title caps in a string array
 
-let txt = ["geeks for geek"]
-let str = function (){
-      return (txt.charAat(0).toUpperCase()+txt.substr(1).toLowerCase());
+let thu = "geeks for geek"
+ let str = function(){
+      return thu.split(" ").map(function(title){
+return title.replace(title[0],title[0].toUpperCase());
+      }).join(" ");
+      
     }
-    console.log(str(txt));
+    console.log(str());
+
+    
