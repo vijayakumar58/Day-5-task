@@ -101,3 +101,73 @@ var arr8=["apple","orange","mango","painapple","lemon"];
               return arr8;
 }
 console.log(rot(arr8));
+
+//3.Do the below programs in arrow functions.
+//a.Print odd numbers in an array
+
+let arr9=[1,2,3,34,54,55,34,32,11,19,17,54]
+let odd9=[];
+let num1 =(arr)=>{
+    for(i=0;i<arr9.length;i++){
+         if(arr9[i]%2==1){
+            odd9.push(arr9[i])
+         }
+    }
+          return odd9;
+}
+console.log(num1(arr9)); 
+
+//b.Convert all the strings to title caps in a string array
+
+let thu1 = "geeks for geek"
+ let str1 = ()=>{
+      return thu1.split(" ").map(function(title){
+return title.replace(title[0],title[0].toUpperCase());
+      }).join(" ");
+      
+    }
+    console.log(str1());
+
+    //c.Sum of all numbers in an array
+  
+  let arr11=[11,12,13,14,15,16,17,18,19,20];
+  var res= ()=>{
+   var sum=0;
+   for(var i=0;i<arr11.length;i++){
+         sum=sum+arr1[i];
+   }
+      return sum;
+}
+console.log(res());
+
+//d.Return all the prime numbers in an array
+
+let arr12=[11,12,13,14,15,16,17,18,19,20];
+var prime1=()=>{
+   var primeNumber1=[];
+    arr12.forEach((element) => {
+         let factor=0;
+         for (let i=0;i<=element;i++){
+               if (element%i ===0){
+                     factor++
+               }
+         }
+         if(factor===2){
+               primeNumber1.push(element)
+         }
+    }) 
+    return primeNumber1;
+   }
+   console.log(prime1());
+
+//e.Return all the palindromes in an array
+
+let arr13=["madam","apple","appa","google"];
+  let palin1=[];
+var pal1=()=>{
+      for(var i=0;i<arr13.length;i++){
+           palin1.push( arr13[i].split("").reverse().join(""))
+      }
+      return palin1;
+}
+console.log(pal1());
